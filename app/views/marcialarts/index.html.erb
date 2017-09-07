@@ -1,0 +1,19 @@
+<h1>Centros de Entrenamientos</h1>
+<div class="row">
+  <% @marcialarts.each do |marcial| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= marcial.image %>" alt="MMA">
+      <div class="caption">
+        <h3><%= marcial.nombre %></h3>
+        <h3>LINKS: <%= marcial.link %></h3>
+        <%= link_to "More Info", marcial, class: "btn btn-default" %>        
+      </div>
+    </div>    
+  </div>  
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to "New MMA", new_marcialart_path, class: "btn btn-default" %>

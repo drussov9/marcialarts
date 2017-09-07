@@ -1,0 +1,2 @@
+module MarcialartsHelper
+end
